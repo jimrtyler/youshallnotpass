@@ -49,6 +49,120 @@ For force-installation via Google Admin Console:
 
 ---
 
+## Security & Trust
+
+### Official Extension Verification
+
+**Official Extension ID**: `efggnkbeomjjanjmghbadggegjemogee`
+
+**Official Chrome Web Store Link**: [You Shall Not Pass by Jim Tyler](https://chromewebstore.google.com/detail/you-shall-not-pass-by-jim/efggnkbeomjjanjmghbadggegjemogee)
+
+Always install from the official Chrome Web Store listing. Do not install modified versions from third-party sources or unofficial repositories.
+
+### Code Integrity & Tamper Protection
+
+This extension is cryptographically signed by Google through the Chrome Web Store publishing process. Chrome's built-in security mechanisms provide strong protection against tampering:
+
+- **Signature Verification**: Chrome validates the extension's cryptographic signature on every load
+- **Modification Detection**: Any attempt to alter installed extension files will trigger Chrome's integrity checks
+- **Automatic Disabling**: If tampering is detected, Chrome immediately disables the extension
+- **Protected Installation**: Students cannot modify force-installed extensions without administrative privileges
+
+The extension's code cannot be changed post-installation without breaking the signature, making student-level tampering effectively impossible.
+
+### Data Privacy & Storage
+
+This extension is designed with privacy as a core principle. All data collection is minimal, local-only, and does not contain personally identifiable information:
+
+**What is stored locally:**
+- Violation timestamps (ISO 8601 format)
+- Violation type classifications (e.g., "HISTORY_FLOOD", "TAB_SPAM_DETECTED")
+- Generic threshold metrics (e.g., tab count, event rate)
+- Session duration information
+
+**What is NOT stored:**
+- ❌ URLs or browsing history
+- ❌ User identifiers or account information
+- ❌ Personal student data
+- ❌ Keystrokes or form input
+- ❌ Screenshots or page content
+
+**Data transmission:**
+- ❌ No data leaves the device
+- ❌ No external API calls
+- ❌ No remote servers or cloud services
+- ❌ No telemetry or analytics
+
+All violation logs remain on the local device in Chrome's storage API and are subject to the 30-day retention policy and 1,000-entry limit configured in the extension.
+
+### Code Security Review
+
+The extension codebase has been designed to minimize security vulnerabilities:
+
+**Security-conscious practices:**
+- ✅ No use of `eval()` or dynamic code execution
+- ✅ No remote code loading or injection
+- ✅ No external API dependencies
+- ✅ No data exfiltration mechanisms
+- ✅ Content Security Policy compliant
+- ✅ Minimal permissions model (only essential APIs)
+- ✅ Input validation on all user-controlled data
+- ✅ No third-party libraries with known vulnerabilities
+
+**Open Source Transparency:**
+- Complete source code available at: https://github.com/jimrtyler/youshallnotpass
+- Community auditing encouraged
+- Issue reporting via GitHub Issues
+- Pull requests accepted for security improvements
+
+### Compliance & Privacy Standards
+
+- **FERPA Compliant**: No educational records or personally identifiable student information is collected
+- **COPPA Compliant**: No personal information from children under 13 is collected or transmitted
+- **CIPA Compatible**: Designed to work alongside required filtering solutions without collecting additional student data
+
+### Liability & Warranty Disclaimer
+
+This extension is provided "AS IS" without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+**The author assumes no liability for:**
+- Damages arising from use or misuse of this extension
+- Compatibility issues with specific environments
+- Effectiveness against all bypass methods
+- Actions taken by students or third parties
+- Policy violations at individual schools
+
+**Users are responsible for:**
+- Compliance with local policies and regulations
+- Testing thoroughly in their environment before deployment
+- Monitoring extension behavior and effectiveness
+- Maintaining appropriate device management policies
+- Securing their Chrome Web Store developer accounts (if republishing)
+
+### Developer Account Security
+
+If you are forking this project or republishing under your own Chrome Web Store account:
+
+- Enable 2-factor authentication on your Google account
+- Use strong, unique passwords
+- Monitor your developer dashboard for unexpected activity
+- Consider using a dedicated Google account for extension publishing
+- Review all code changes before publishing updates
+- Maintain audit logs of who has access to your developer account
+
+### Reporting Security Issues
+
+If you discover a security vulnerability in this extension:
+
+1. **Do not** open a public GitHub issue
+2. Email security concerns directly to: jim.tyler@nilesschools.org
+3. Provide detailed information about the vulnerability
+4. Allow reasonable time for a fix before public disclosure
+
+Responsible disclosure is appreciated and will be credited in release notes (unless you prefer to remain anonymous).
+
+---
+
 ## Architecture
 
 ### Components
