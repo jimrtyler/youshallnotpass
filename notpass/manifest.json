@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "You Shall Not Pass by Jim Tyler",
+  "version": "3.0.3",
+  "description": "Tab controls. ",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "webNavigation",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_guard.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://sites.google.com/*"],
+      "js": ["google_sites_inspector.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "blocking_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

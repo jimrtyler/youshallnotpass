@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1002,
+    "priority": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "blob:*",
+      "initiatorDomains": ["sites.google.com"],
+      "resourceTypes": ["sub_frame"],
+      "excludedInitiatorDomains": ["docs.google.com", "drive.google.com"]
+    }
+  },
+  {
+    "id": 1003,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*unblock.*(game|site|web).*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1004,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*3kh0*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1005,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*titaniumnetwork*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1006,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*mercuryworkshop*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1007,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*(vercel|netlify|render|replit).*app.*(game|unblo|proxy).*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1008,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*ultraviolet*",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  },
+  {
+    "id": 1009,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*rammerhead*",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  },
+  {
+    "id": 1010,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*uv\\.bundle.*",
+      "resourceTypes": ["script"]
+    }
+  },
+  {
+    "id": 1011,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*bare-client*",
+      "resourceTypes": ["script"]
+    }
+  },
+  {
+    "id": 1012,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*coolmath.*(game|unblo).*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1013,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*retrobowl*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1014,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*krunker.io*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1015,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*shellshockers*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1016,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*1v1.lol*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1017,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*(github\\.io|pages\\.dev).*(game|unblo|proxy).*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1018,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*raw.githubusercontent.com*",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedResourceTypes": ["stylesheet", "font"]
+    }
+  },
+  {
+    "id": 1019,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*ltbeef.*",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  },
+  {
+    "id": 1020,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*ltmeat.*",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  },
+  {
+    "id": 1021,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*ingot.*exploit.*",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  },
+  {
+    "id": 1022,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*ext-remover*",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  },
+  {
+    "id": 1023,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*cloudflare.*worker.*(proxy|game|unblo).*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 1024,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*.workers.dev*",
+      "resourceTypes": ["main_frame", "sub_frame"],
+      "excludedInitiatorDomains": ["github.com", "microsoft.com"]
+    }
+  },
+  {
+    "id": 1025,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*(hooda|armor|newgrounds).*(game).*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]
